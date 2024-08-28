@@ -16,28 +16,51 @@
 
     <!-- Menú de navegación -->
     <nav class="navegacion">
-        <li><a href="./index.html">Inicio</a></li>
-        <li><a href="./post.html">Posts</a></li>
-        <li><a href="./mapa-web.html">Mapa web</a></li>
-        <li><a href="./contacto.html">Contacto</a></li>
+        <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./post.html">Posts</a></li>
+            <li><a href="./mapa-web.html">Mapa web</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
     </nav>
 
-    <!-- Formulario de Contacto -->
-     <section class="contacto">
+    <!-- Sección de Contacto -->
+    <main class="contacto-pagina">
+
         <h2>Contacto</h2>
-        <form action="#" method="post">
-            <label for="nombre">NOmbre: </label>
-            <input type="text" name="nombre" id="nombre" required>
+        <!-- Sección de Redes Sociales -->
+        <section class="redes-sociales">
+            <h3>Encuentranos en: </h3>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
 
-            <label for="email">Correo electrónico: </label>
-            <input type="email" name="email" id="email" required>
+        </section>
 
-            <label for="mensaje">Mensaje: </label>
-            <textarea type="text" name="mensaje" id="mensaje"></textarea>
+        <!-- Formulario de Contacto -->
+        <section class="formulario-contacto">
+            <h3>Envíame un mensaje</h3>
+            <form action="#" method="post">
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" id="nombre" required>
 
-            <button type="submit">Enviar</button>
-        </form>
-     </section>
+                <label for="email">Correo electrónico: </label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="mensaje">Mensaje: </label>
+                <textarea type="text" name="mensaje" id="mensaje"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+
+    </main>
+
+
 
     <!-- Footer -->
     <footer class="pie-de-pagina">

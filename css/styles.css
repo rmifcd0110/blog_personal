@@ -267,3 +267,68 @@ body {
     font-size: 1.25rem;
     color: #333;
 }
+
+.tarjeta p {
+    padding: 0 1rem 1rem 1rem;
+    margin: 0;
+    color: #666;
+}
+
+.tarjeta a {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.tarjeta a:hover {
+    background-color: #0056b3;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+/* Media Query para pantallas de móviles pequeños (<=480px) */
+
+@media (max-width: 480px) {
+    .tarjetas-post {
+        grid-template-columns: 1fr; /*Mostar en una columna*/
+    }
+    .formulario-contacto form {
+        max-width: 90%;
+    }
+}
+
+/* Media Query para tablet (>=481px y <=768px) */
+
+@media (min-width:481px) and (max-width:768px) {
+    .contenido {
+        grid-template-columns: 1fr 1fr;
+    }
+    .formulario-contacto form {
+        max-width: 75%;
+    }
+}
+
+/* Media Query pantallas medianas (>=769px y <=1024px) */
+
+@media (min-width:769px) and (max-width:1024px) {
+    .contenido {
+        grid-template-columns: 2fr 1fr;
+    }
+    .formulario-contacto form {
+        max-width: 400px;
+    }
+}
+
+/* Media Query para pantallas grandes (>= 1025px)*/
+
+@media (min-width:1025px) {
+    .formulario-contacto form {
+        max-width: 400px;
+    }
+}
